@@ -1,0 +1,91 @@
+/*
+Module Name: JavaScript 
+Assignment Title: Final Marked Assignment (FMA) 
+Task: Zedland Health Authority Contact Form with jQuery
+Student Name: Ivan Stoyanov 
+Username: istoya01 
+Student Number: 12903492
+Tutor Name: Tobi Brodie
+Submission Deadline: Tuesday, 12 April 2016 
+*/
+
+/*Page Content*/
+#wrapper	{
+			margin: 3em 0 0 3em;
+			background: url("background.png") right top no-repeat;
+			}
+			
+/*Page Heading*/
+h1	{
+	font-family: Roboto, san-serif;
+	margin-left: 0.9em;
+	}
+	
+/*Form Fields*/
+fieldset	{
+		display: block;
+		border: 1px solid #000000;
+		width: 25%;
+		margin-left: 3.2em;
+		font-family: Roboto, san-serif;
+		background-color: #e4e4f7;		
+		}
+
+label	{
+	padding-left: 0.6em;
+	}
+
+/*Text Hint*/
+.onfocus	{
+			color: #000000;
+			font-style: normal;
+			}
+
+.onblur {
+		color: #A8A8A8;
+		font-style: italic;
+		}
+
+/*Tooltip*/			
+.notooltip	{
+			display: none;
+			}
+
+.tooltip	{
+			display: block;
+			float: right;
+			text-align: left;
+			width: 14em;
+			height: 6em;
+			color: #000000;
+			margin: -7em 0.6em 0em 0em;
+			padding: 0.2em 0em 0em 1em;
+			font: 0.7em Roboto, san-serif;
+			background: url("tooltip.png") left top no-repeat;
+			}
+		
+.error	{
+		display: block;
+		color: red;
+		margin-left: 2.2em;
+		}
+		
+/*Submission Message*/	
+#success	{
+			display: block;
+			padding: 0.9em 0.5em 0.9em 0.6em;
+			}
+
+.onload	{
+		display: none;
+		border: 0px solid #000000;
+		}
+		
+.onsubmit	{
+			display: block;
+			border: 1px solid #000000;
+			width: 25%;
+			margin: 0.5em 0 0 3.2em;
+			font-family: Roboto, san-serif;
+			background-color: #e4e4f7;		
+			}

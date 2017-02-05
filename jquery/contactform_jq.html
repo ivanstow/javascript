@@ -1,0 +1,71 @@
+<!doctype html>
+<!--
+Module Name: JavaScript 
+Assignment Title: Final Marked Assignment (FMA) 
+Task: Zedland Health Authority Contact Form with jQuery
+Student Name: Ivan Stoyanov 
+Username: istoya01 
+Student Number: 12903492
+Tutor Name: Tobi Brodie
+Submission Deadline: Tuesday, 12 April 2016 
+-->
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>The Diabetes Risk Assessment Tool</title>       
+        <link rel="stylesheet" type="text/css" href="contactform_jq.css">
+		<!--  https://www.google.com/fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">		
+		<!--  Session 8 Presentation Slides, Page 22 -->
+		<script src="jquery.validate.min.js"></script>
+		<!--  https://code.jquery.com/ -->
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>			
+		<script src="contactform_jq.js"></script>
+	</head>
+	<body id="wrapper">
+		<header>
+			<h1>Zedland Health Authority Contact Form</h1>
+		</header>
+		<div>
+			<form id="contactform" method="post" name="Zedland Health Authority Contact Form">
+				<fieldset>
+				<!--  (McFarland 2012: 258-259) -->
+					<label for="fname">First Name *</label>
+					<input id="fname" type="text" name="firstname">
+						<span id="firstnameerror" class="error"></span>
+						<br>
+					<label for="lname">Last Name *</label>
+					<input id="lname" type="text" name="lastname">
+						<span id="lastnameerror" class="error"></span>
+						<br>
+					<label for="title">Title *</label>
+					<select id="title">
+						<option value="">Please select one</option>
+						<option value="Mrs">Mrs</option>
+						<option value="Mr">Mr</option>
+						<option value="Ms">Ms</option>
+						<option value="Miss">Miss</option>
+					</select>
+						<span id="titleerror" class="error"></span>
+						<br>
+					<label for="zhanumber">Health Authority Number *</label>
+					<input id="zhanumber" type="text" name="healthauthoritynumber" class="onblur">
+						<img id="image" src="qmark.png" alt="help" width="19" height="19">
+						<span class="notooltip" id="tooltip">You can find your Health Authority Number at the bottom of your bill.</span>					
+						<span id="zhanumbererror" class="error"></span>
+						<br>
+					<label for="email">Email *</label>
+					<input id="email" type="text" name="emailaddress">
+						<span id="emailerror" class="error"></span>
+						<br>
+					<label for="telnumber">Telephone Number</label>
+					<input id="telnumber" type="text" name="telephonenumber"><br>
+						<span id="telnumbererror" class="error"></span>
+						<br>
+					<button id="button" type="submit" name="submitbutton" value="Submit">SUBMIT</button>
+				</fieldset>
+			</form> 
+		</div>
+		<div id="success" class="onload"><p id="prompt" class="onload"><p></div>
+	</body>
+</html>
