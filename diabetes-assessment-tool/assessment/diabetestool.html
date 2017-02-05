@@ -1,0 +1,90 @@
+<!doctype html>
+<!--
+Module Name: JavaScript 
+Assignment Title: Final Marked Assignment (FMA) 
+Task: The Diabetes Risk Assessment Tool
+Student Name: Ivan Stoyanov 
+Username: istoya01 
+Student Number: 12903492
+Tutor Name: Tobi Brodie
+Submission Deadline: Tuesday, 12 April 2016 
+-->
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>The Diabetes Risk Assessment Tool</title>       
+        <link rel="stylesheet" type="text/css" href="diabetestool.css">
+		<!-- Reference taken from https://www.google.com/fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<script src="diabetestool.js"></script>
+	</head>
+	<body id="wrapper">
+		<header>
+			<h1>The Diabetes Risk Assessment Tool</h1>
+		</header>    
+			<form>
+				<fieldset>
+					<div class="form">
+					<legend class="question">How old are you?</legend>
+						<div class="radio">
+							<label for="1-25">1-25</label>
+							<input id = "1-25" type="radio" name="age" value="0">
+							<label for="26-40">26-40</label>
+							<input id="26-40" type="radio" name="age" value="5">
+							<label for="41-60" id="10">41-60</label>
+							<input id="41-60" type="radio" name="age" value="8">
+							<label for="60+">60+</label>
+							<input id="60+" type="radio" name="age" value="10">
+						</div>
+					</div>
+					<div class="form">
+					<legend class="question">What is your BMI?</legend>
+						<div class="radio">
+							<label for="0-25">0-25</label>
+							<input id="0-25" type="radio" name="bmi" value="0">
+							<label for="26-30">26-30</label>
+							<input id="26-30" type="radio" name="bmi" value="0">
+							<label for="31-35">31-35</label>
+							<input id="31-35" type="radio" name="bmi" value="9">
+							<label for="35+">35+</label>
+							<input id="35+" type="radio" name="bmi" value="10">
+						</div>	
+					</div>				
+					<div class="form">
+					<legend class="question">Does anybody in your family have diabetes?</legend>
+						<div class="radio">
+							<label for="no">No</label>
+							<input id="no" type="radio" name="family" value="0">
+							<label for="grandparent">Grandparent</label>
+							<input id="grandparent" type="radio" name="family" value="7">
+							<label for="sibling">Sibling</label>
+							<input id="sibling" type="radio" name="family" value="15">
+							<label for="parent">Parent</label>
+							<input id="parent" type="radio" name="family" value="15">
+						</div>
+					</div>
+					<div class="form">
+					<legend class="question">How would you describe your diet?</legend>
+						<div class="radio">
+							<label for="lowsugar">Low sugar</label>
+							<input id="lowsugar" type="radio" name="diet" value="0">
+							<label for="normalsugar">Normal sugar</label>
+							<input id="normalsugar" type="radio" name="diet" value="0">
+							<label for="quitehighsugar">Quite high sugar</label>
+							<input id="quitehighsugar" type="radio" name="diet" value="7">
+							<label for="highsugar">High sugar</label>
+							<input id="highsugar" type="radio" name="diet" value="10">
+						</div>
+					</div>
+				</fieldset>
+			</form>        
+		<br>
+		<div>
+            <button id="button" type="submit" value="Calculate" class="button">CALCULATE</button>
+        </div>
+        <div id="result" class="none">
+			<h3>Your Result</h3>
+            <p id="advice" class="none"></p>
+        </div>
+	</body>
+</html>

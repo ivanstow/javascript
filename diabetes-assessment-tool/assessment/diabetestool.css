@@ -1,0 +1,99 @@
+/*
+Module Name: JavaScript 
+Assignment Title: Final Marked Assignment (FMA) 
+Task: The Diabetes Risk Assessment Tool
+Student Name: Ivan Stoyanov 
+Username: istoya01 
+Student Number: 12903492
+Tutor Name: Tobi Brodie
+Submission Deadline: Tuesday, 12 April 2016 
+*/
+	
+/*Page Content*/
+#wrapper	{
+			margin: 3em 0 0 3em;
+			background-image: url("background.png");
+			background-repeat: no-repeat;
+			background-position: right top;
+			}
+			
+/*Page Heading*/
+h1	{
+	font-family: Roboto, san-serif;
+	margin-left: 0.9em;
+	}
+
+/*Form Fields*/
+fieldset	{
+		display: block;
+		border: 1px solid #000000;
+		width: 40%;
+		margin-left: 3.2em;
+		font-family: Roboto, san-serif;
+		background-color: #e4e4f7;
+		}
+
+legend	{
+		padding: 0.5em 0 0.5em 0;
+		} 
+		
+/*Questions*/
+.form	{
+		clear:both;
+		min-height: 2em;
+		text-align: right;
+		}
+
+.question	{
+			width: 24%;
+			min-height: 2em;
+			display: inline;
+			float: left;
+			}
+
+/*Radio Buttons*/
+.radio	{
+		display: inline;
+		min-height: 2em;
+		float: left;
+		margin: 0.5em 0em 0 1em;
+		}
+
+/*Submit Button*/
+.button	{
+		width: 8%;
+		margin-left: 6em;
+		font: 0.9em Roboto, san-serif;
+		}
+
+/*Health Advice*/
+.none	{
+		display: none;
+		border: 0px #ffffff;
+		}
+
+.some	{
+		display: inline;
+		width: 39%;
+		margin-left: 3.2em;
+		}
+		
+#advice	{
+		display: block;
+		border: 1px solid #000000;
+		font-family: Roboto, san-serif;
+		background-color: #e4e4f7;
+		}
+		
+#advice p	{
+			width: 40%;
+			}
+
+#result p.some	{
+				padding: 1em 1em 1em 1em;
+				}
+			
+#result h3	{
+			font-family: Roboto, san-serif;
+			margin: 0.3em 0 0.5em 1.8em;
+			}
